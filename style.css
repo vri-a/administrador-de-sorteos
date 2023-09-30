@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+:root {
+    --white: #FAF5E6;
+    --black: #070707;
+    --dark: #45454611;
+    --primary-color: #F3AD66;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+p::selection, label::selection, h2::selection, button::selection{
+    background-color: var(--primary-color);
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 .5em;
+    background-color: var(--primary-color);
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+svg { 
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.btn__theme {
+    font-size: .6em;
+    padding: .3em;
+    border-radius: 50%;
+    background-color: var(--white);
+    outline: 1px solid var(--black);
+    object-fit: cover;
+    margin-left: .8em;
+
+}
+
+.btn__home {
+    width: 5em;
+    font-size: .8em;
+   justify-content: space-between; 
+
+}
+
+/* Header */
+header, section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.presentation {
+    width: 70%;
+    height: 60%;
+    border: 2px solid var(--black);
+    padding: 0 1em 2em 1em; 
+    margin-top: 4em; 
+    font-weight: bold;
+    background-color: #6c5b6a1c;
+ 
+}
+
+.presentation > p {
+    font-size: .8em;
+    padding: .3em .5em;
+}
+
+.presentation__content {
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid var(--black);
+    padding: 1em; 
+  
+}
+
+.presentation__content > p {
+    width: 100%;
+    text-align: center;
+    font-size: .9em;
+}
+
+.presentation__icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+    font-size: .8em;
+    user-select: none;
+}
+
+.btn__header {
+    width: 45%;
+    padding: .9em 2em;
+    margin-top: -1em;
+    border: 2px solid var(--black);
+    background-color: var(--primary-color);
+    border-radius: .3em;
+    font-weight: bold;
+    font-size: .8em;
+}
+
+/* sec options */
+.subtitle {
+    width: 80%;
+    text-align: center;
+    font-size: 1.4em;
+    margin: 1em 0 1.5em 0;
+}
+
+.sec__options-cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 60%;
+}
+
+.card {
+    width: 100%;
+    height: max-content;
+    margin-bottom: 2em;
+    padding: .8em;
+    background-color: var(--dark);
+}
+
+.card > p {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.card::before {
+    content: "1";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    margin: auto;
+    margin-top: -1.3em; 
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    
+}
+
+.card:nth-child(2)::before {
+    content: "2";
+    
+}
+
+/* sec raffle */
+.sec__raffle {
+    flex-wrap: nowrap;
+}
+
+.raffle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.raffle__controls {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+
+}
+
+.raffle__btn {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+input {
+    border: 0;
+    color: var(--black);
+    outline: 1px solid var(--black);
+    margin-bottom: .8em;
+    background-color: transparent;
+    caret-color: var(--primary-color);
+
+ }
+
+input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+.raffle__controls > input {
+    width: 90%;
+}
+
+.raffle__controls > input, .raffle__btn > button {
+    padding: .8em;
+    margin-left: .8em;
+    height: 3em;
+
+}
+
+label {
+    padding-top: 1em;
+    font-size: .9em;
+}
+
+.raffle__btn > button, .raffle__options > button {
+    outline: 1px solid var(--black);
+    background-color: var(--primary-color);
+}
+
+.raffle > p {
+    width: 100%;
+    height: 2em;
+    margin: 1em 0;
+    text-align: center;
+    font-size: .9em;
+}
+
+.raffle__options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.raffle__options > button {
+    width: 90%;
+    margin: .5em 0;
+    height: 3em;
+}
+
+.raffle__options > p {
+    width: 100%;
+    font-size: .8em;
+    text-align: center;
+
+}
+
+/* sec users */
+.sec__users {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sec__users > div {
+    flex-wrap: nowrap;
+    width: 80%;
+    height: 3em;
+    border: 1px solid var(--black);
+    margin: .5em 0;
+}
+
+.sec__users-user > div:nth-child(1) {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    height: 100%;
+}
+
+.sec__users-user > div:nth-child(1) > input {
+    height: 100%;
+    width: 80%;
+    outline: 0;
+    padding-left: .5em;
+    margin: 0;
+}
+
+.sec__users-user > div > button {
+    width: 4em;
+    height: 3em;
+    margin-left: .3em;
+    background-color: var(--primary-color);
+    outline: 1px solid var(--black);
+}
+
+.users__count {
+    width: 80%;
+    padding: .5em;
+    font-size: .9em;
+}
+
+#user__winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+    padding: 1em 0;
+} 
+
+/*dark mode*/
+.dark {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.dark__nav {
+    background-color: var(--dark); 
+}
+
+.dark__border {
+    outline: 2px solid var(--white);
+    color:  var(--white);
+}
+
+  .dark__inputs {
+    color: var(--white);
+} 
+
+.color__dark {
+    color: var(--white);
+
+}
+.dark__background {
+    background-color: var(--dark); 
+    outline: 1px solid var(--white);
+}
+
+/* Added class*/
+.win {
+    background-color: var(--primary-color);
+}
+
+/* Hidden elements */
+.btn__back {
+    display: none;  
+} 
+
+.sec__options, .sec__raffle, .sec__users {
+    display: none;
+    
+}
+
+/* Media queries */
+@media (min-width:650px) {
+
+     .presentation {
+        width: 55%;
+
+    }  
+
+    .img {
+        width: 10em;
+        height: 10em;
+    }
+
+    .presentation__content {
+        padding: 1em;
+        height: 80%;
+        font-size: 1em;
+        
+    }
+
+    .btn__header {
+        width: 25%;
+        height: 3rem;
+    }
+
+    .card {
+        height: 30%;
+        font-size: 1.2em;
+    }
+
+}
+
+@media (min-width:850px) {
+   .presentation {
+        width: 50%;
+        height: 70%;
+    } 
+
+   .card::before {
+    margin-top: -1.5em; 
+     
+    }
+
+    .raffle__controls > input {
+        width: 95%;
+    }
+
+    .sec__users-user > div:nth-child(1) > input {
+        width: 95%;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .presentation {
+        width: 40%;
+    }
+    .card {
+        height: 35%;
+    }
+}
+

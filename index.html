@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de sorteos</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" type="image/png" sizes="16x16"  href="favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">   -->
+</head>
+<body>
+    <nav>
+        <button class="btn__home" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path></svg>
+        Inicio</button>
+        <div>
+            <button class="btn__back" type="button">Regresar</button>
+            <button class="btn__theme" type="button" aria-label="theme" title="theme">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z"></path></svg>
+            </button>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="presentation">
+            <p>¡Bienvenido(a)!</p>
+            <div class="presentation__content">
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/128/1328/1328106.png" alt="" class="img">
+                    </div>
+                    <p>Administra tus sorteos fácilmente</p>
+            </div>
+            <div class="presentation__icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 21h1V8H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2zM20 8h-7l1.122-3.368A2 2 0 0 0 12.225 2H12L7 7.438V21h11l3.912-8.596L22 12v-2a2 2 0 0 0-2-2z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m5.705 3.71-1.41-1.42C1 5.563 1 7.935 1 11h1l1-.063C3 8.009 3 6.396 5.705 3.71zm13.999-1.42-1.408 1.42C21 6.396 21 8.009 21 11l2-.063c0-3.002 0-5.374-3.296-8.647zM12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.184 4.073 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11 6.914V2.586L6.293 7.293l-3.774 3.774 3.841 3.201L11 18.135V13.9c8.146-.614 11 4.1 11 4.1 0-2.937-.242-5.985-2.551-8.293C16.765 7.022 12.878 6.832 11 6.914z"></path></svg>
+            </div>
+        </div>
+        <button class="btn__header">Empecemos</button>
+    </header>
+    <section class="sec__options">
+        <h2 class="subtitle">Elige</h2>
+        <div class="sec__options-cards">
+            <div class="card btn__options" id="btn__op1">
+                <p>Una chance por participante</p>
+            </div>
+            <div class="card btn__options" id="btn__op2">
+                <p>Muchas chances por participante</p>
+            </div>
+        </div>
+    </section> 
+    <section class="sec__raffle">
+        <h2 class="subtitle">Ingresa los participantes</h2>
+        <div class="raffle">
+            <div class="raffle__controls">
+                <label for="add__user">Participante</label>
+                <input type="text" id="add__user" placeholder="Ingresa un participante">
+            </div>
+            <div class="raffle__btn">
+                <button id="btn__users">Ver participantes</button>
+                <button id="btn__add">Agregar</button>
+                <button id="btn__raffle">Sortear</button>
+            </div>
+            <p id="raffle__msg"></p>
+        </div>
+        <div class="raffle__options">
+            <button id="btn__clean">Limpiar la actual lista de participantes y crear una nueva lista</button>
+            <button id="btn__continue">Continuar usando la misma lista de participantes</button>
+            <p>Después de cada sorteo la lista de participantes se bloquea, elige una de las opciones arriba para agregar nuevos participantes.</p>
+            <p>*Cuando salgas del programa la lista de usuarios se eliminará.</p>
+        </div>
+    </section>
+    <section class="sec__users">
+        <h2 class="subtitle">Participantes agregados</h2>
+        <p class="users__count"></p>
+        <p id="user__winner"></p>
+    </section>
+<script src="main.js"></script>
+</body>
+</html>
